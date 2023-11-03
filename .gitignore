@@ -32,3 +32,6 @@ chapter??/chapter??.exe
 *.vcxproj.filters
 .vs/
 x64/
+vs/
+MingwBase/
+MingwExamples/

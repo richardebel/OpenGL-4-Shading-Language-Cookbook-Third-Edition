@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        },
+        {
+            "name": "mingw64",
+            "includePath": [
+                "${workspaceFolder}/ingredients",
+                "${workspaceFolder}/ingredients/glad/include",
+                "D:/glm-0.9.9.8",
+                "D:/glfw-3.3.8/include"
+            ],
+            "defines": [
+                "NDEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "D:/MinGW/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

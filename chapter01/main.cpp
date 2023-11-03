@@ -4,20 +4,11 @@
 
 #include <memory>
 
-static std::map< std::string, std::string > sceneData = {
-		{"basic", "Basic scene."}
-};
-
 int main(int argc, char *argv[])
 {
-	std::string recipe = SceneRunner::parseCLArgs(argc, argv, sceneData);
+	SceneRunner runner("Chapter 1 - Basic scene.", 500, 500);
 
-	SceneRunner runner("Chapter 1 - " + recipe, 500, 500);
-
-	std::unique_ptr<Scene> scene;
-	if( recipe == "basic" ) {
-		scene = std::unique_ptr<Scene>(new SceneBasic());
-	}
+	std::unique_ptr<Scene> scene = std::unique_ptr<Scene>(new SceneBasic());
 
 	return runner.run(std::move(scene));
 }
